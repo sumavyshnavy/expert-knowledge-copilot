@@ -1,6 +1,6 @@
-import Sidebar from "@/Frontend/components/layout/Sidebar";
-import Topbar from "@/Frontend/components/layout/Topbar";
-import ChatWindow from "@/Frontend/components/copilot/ChatWindow";
+import Sidebar from "@/components/layout/Sidebar";
+import Topbar from "@/components/layout/Topbar";
+import ChatWindow from "@/components/copilot/ChatWindow";
 
 export default function CopilotPage() {
   return (

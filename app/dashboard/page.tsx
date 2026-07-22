@@ -1,6 +1,6 @@
-import Sidebar from "@/Frontend/components/layout/Sidebar";
-import Topbar from "@/Frontend/components/layout/Topbar";
-import Dashboard from "@/Frontend/components/dashboard/Dashboard";
+import Sidebar from "@/components/layout/Sidebar";
+import Topbar from "@/components/layout/Topbar";
+import Dashboard from "@/components/dashboard/Dashboard";
 
 export default function DashboardPage() {
   return (

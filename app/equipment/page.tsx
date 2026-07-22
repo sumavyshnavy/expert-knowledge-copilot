@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 
-import Sidebar from "@/Frontend/components/layout/Sidebar";
-import Topbar from "@/Frontend/components/layout/Topbar";
+import Sidebar from "@/components/layout/Sidebar";
+import Topbar from "@/components/layout/Topbar";
 
 import { getDashboard, getDocuments } from "@/lib/api";
 
