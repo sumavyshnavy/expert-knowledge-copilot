@@ -1,42 +1,48 @@
 # Expert Knowledge Copilot
 
-> An AI-powered enterprise knowledge management platform that enables intelligent document search, retrieval, summarization, comparison, and visualization using Retrieval-Augmented Generation (RAG) and Google Gemini.
+> An AI-powered enterprise knowledge management platform that enables intelligent document search, retrieval, summarization, comparison, and visualization using Retrieval-Augmented Generation (RAG) and Groq AI.
 
 Built for the **ET Hackathon 2026**.
 
 ---
 
-## Overview
+# Overview
 
-Expert Knowledge Copilot is designed to help organizations unlock valuable information hidden inside technical documents, SOPs, manuals, policies, reports, and compliance documents.
+Expert Knowledge Copilot helps organizations unlock valuable information hidden inside technical documents, SOPs, manuals, policies, reports, and compliance documents.
 
-Instead of manually searching through hundreds of files, users can upload documents and ask questions in natural language. The platform retrieves the most relevant information using semantic search and generates accurate, context-aware responses powered by Google Gemini.
+Instead of manually searching through hundreds of files, users can upload documents and ask questions in natural language. The platform retrieves the most relevant information using semantic search and generates accurate, context-aware responses powered by **Groq AI (Llama 3.3 70B)**.
 
 ---
 
-## Features
+# Features
 
-### AI Copilot
+## AI Copilot
 
 - Natural language question answering
 - Context-aware responses
 - Conversation memory
 - Source-backed answers
 
-### Document Management
+---
+
+## Document Management
 
 - Upload enterprise documents
 - Automatic document processing
 - Semantic indexing
 - Vector storage
 
-### Retrieval-Augmented Generation (RAG)
+---
+
+## Retrieval-Augmented Generation (RAG)
 
 - Semantic similarity search
 - Context retrieval
 - AI-powered response generation
 
-### AI Summarization
+---
+
+## AI Summarization
 
 Generate concise summaries for:
 
@@ -45,7 +51,9 @@ Generate concise summaries for:
 - Policies
 - Reports
 
-### Document Comparison
+---
+
+## Document Comparison
 
 Compare multiple documents to identify:
 
@@ -54,7 +62,9 @@ Compare multiple documents to identify:
 - Missing information
 - Version changes
 
-### Knowledge Graph
+---
+
+## Knowledge Graph
 
 Visualize relationships between:
 
@@ -63,7 +73,9 @@ Visualize relationships between:
 - Concepts
 - Entities
 
-### AI Insights
+---
+
+## AI Insights
 
 Automatically extract:
 
@@ -72,7 +84,9 @@ Automatically extract:
 - Trends
 - Recommendations
 
-### Analytics Dashboard
+---
+
+## Analytics Dashboard
 
 Monitor:
 
@@ -93,14 +107,19 @@ Monitor:
 - Tailwind CSS
 - shadcn/ui
 
+---
+
 ## Backend
 
 - FastAPI
 - Python
 
+---
+
 ## AI
 
-- Google Gemini API
+- Groq API
+- Llama 3.3 70B
 - Sentence Transformers
 - ChromaDB
 - Retrieval-Augmented Generation (RAG)
@@ -109,7 +128,7 @@ Monitor:
 
 # Project Structure
 
-```
+```text
 expert-knowledge-copilot
 │
 ├── app/
@@ -134,7 +153,7 @@ expert-knowledge-copilot
 
 # System Architecture
 
-```
+```text
                      User
                        │
                        ▼
@@ -145,12 +164,12 @@ expert-knowledge-copilot
                        │
         ┌──────────────┼──────────────┐
         ▼              ▼              ▼
- Document Parser   ChromaDB      Gemini API
+ Document Parser   ChromaDB      Groq API
         │              │              │
         └──────────────┴──────────────┘
                        │
                        ▼
-              AI Generated Response
+          Llama 3.3 70B Response
 ```
 
 ---
@@ -169,17 +188,19 @@ cd expert-knowledge-copilot
 
 ## Install Frontend
 
+Install dependencies:
+
 ```bash
 npm install
 ```
 
-Run the development server
+Run the development server:
 
 ```bash
 npm run dev
 ```
 
-Visit
+Open:
 
 ```
 http://localhost:3000
@@ -189,27 +210,25 @@ http://localhost:3000
 
 ## Install Backend
 
-Create a virtual environment
+Create a virtual environment:
 
 ```bash
 python -m venv .venv
 ```
 
-Activate it
-
-Windows
+Activate it (Windows):
 
 ```bash
 .venv\Scripts\activate
 ```
 
-Install dependencies
+Install dependencies:
 
 ```bash
 pip install -r backend/requirements.txt
 ```
 
-Run the backend
+Run the backend:
 
 ```bash
 python backend/app.py
@@ -223,12 +242,12 @@ uvicorn backend.app:app --reload
 
 ---
 
-## Environment Variables
+# Environment Variables
 
 Create a `.env` file inside the `backend` folder.
 
 ```env
-GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
+GROQ_API_KEY=YOUR_GROQ_API_KEY
 ```
 
 ---
@@ -245,18 +264,15 @@ GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
 
 ---
 
-# Team
+# Developer
 
 **ET Hackathon 2026**
 
 Project: **Expert Knowledge Copilot**
 
-Team Members
+Developed by:
 
-- Aadil
-- Subhan
-- Swayam
-- Suma
+**Suma Vyshnavy**
 
 ---
 
@@ -268,7 +284,7 @@ Add screenshots of:
 - AI Copilot
 - Document Upload
 - Knowledge Graph
-- Analytics
+- Analytics Dashboard
 
 ---
 
@@ -280,6 +296,8 @@ Add your demo video link here before submission.
 
 # License
 
-Developed for the **ET Hackathon 2026**.
+MIT License
 
-For educational and demonstration purposes.
+Developed for the **ET Hackathon 2026** using Groq AI and Retrieval-Augmented Generation (RAG).
+
+This project is intended for educational, research, and demonstration purposes.
