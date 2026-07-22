@@ -278,19 +278,23 @@ Developed by:
 
 # Screenshots
 
-Add screenshots of:
+## Dashboard
+![Dashboard](screenshots/dashboard.png)
 
-- Dashboard
-- AI Copilot
-- Document Upload
-- Knowledge Graph
-- Analytics Dashboard
+## AI Copilot
+![AI Copilot](screenshots/ai-copilot.png)
 
----
+## Document Upload
+![Document Upload](screenshots/document-upload.png)
 
-# Demo
+## Compliance Dashboard
+![Compliance Dashboard](screenshots/compliance-dashboard.png)
 
-Add your demo video link here before submission.
+## Knowledge Graph
+![Knowledge Graph](screenshots/knowledge-graph.png)
+
+## Insights Dashboard
+![Insights Dashboard](screenshots/insights-dashboard.png)
 
 ---
 
